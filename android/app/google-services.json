@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "8084182968",
+    "project_id": "estate-ease-7ab0b",
+    "storage_bucket": "estate-ease-7ab0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8084182968:android:8ff3c2dae1a910b711214d",
+        "android_client_info": {
+          "package_name": "com.example.estate_ease"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNzav5gxDSe1zyamH_hJcVsHCaUuK-wuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
