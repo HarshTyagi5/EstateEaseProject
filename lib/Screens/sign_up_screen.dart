@@ -1,4 +1,4 @@
-import 'package:estate_ease/Screens/home_screen.dart';
+import 'package:estate_ease/Screens/property_list_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:estate_ease/Widgets/container_for_input.dart';
@@ -24,7 +24,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       final userCredentials = await _firebase.createUserWithEmailAndPassword(
           email: _controllerEmail.text, password: _controllerPassword.text);
       Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-        return const HomeScreen();
+        return  PropertyListScreen();
       }));
     } on FirebaseAuthException catch (e) {
       if (e.code == 'email-already-in-use') {
@@ -73,6 +73,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Estate Ease'),),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(

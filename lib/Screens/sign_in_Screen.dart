@@ -1,4 +1,4 @@
-import 'package:estate_ease/Screens/home_screen.dart';
+import 'package:estate_ease/Screens/property_list_screen.dart';
 import 'package:estate_ease/Screens/sign_up_screen.dart';
 import 'package:estate_ease/Widgets/container_for_input.dart';
 import 'package:estate_ease/Widgets/sign_in_button.dart';
@@ -47,7 +47,7 @@ class _SignInScreenState extends State<SignInScreen> {
 
       Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (context) => const HomeScreen(),
+          builder: (context) =>  PropertyListScreen(),
         ),
       );
     } on FirebaseAuthException catch (e) {
